@@ -13,11 +13,11 @@ public class InventoryItemPage {
     WebDriverWait wait;
 
     public InventoryItemPage(WebDriver driver) {
-        wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+        wait = new WebDriverWait(driver, Duration.ofSeconds(25));
         this.driver = driver;
     }
 
-    private final By addToCartBtn = By.id("#add-to-cart-sauce-labs-onesie");
+    private final By addToCartBtn = By.id("#add-to-cart-sauce-labs-backpack");
 
     private final By cartBtn = By.className(".shopping_cart_badge");
 

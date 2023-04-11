@@ -11,8 +11,8 @@ public class InventoryTest extends BaseTest {
         LoginPage loginPage = new LoginPage(driver);
         loginPage.login("standard_user", "secret_sauce");
         InventoryPage inventoryPage = new InventoryPage(driver);
-        inventoryPage.selectProduct("Sauce Labs Onesie");
-        Assert.assertEquals(driver.getCurrentUrl(), "https://www.saucedemo.com/inventory-item.html?id=2");
+        inventoryPage.selectProduct("Sauce Labs Backpack");
+        Assert.assertEquals(driver.getCurrentUrl(), "https://www.saucedemo.com/inventory-item.html?id=4");
     }
 
 }
