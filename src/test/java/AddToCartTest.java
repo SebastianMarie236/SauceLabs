@@ -14,6 +14,6 @@ public class AddToCartTest extends BaseTest {
         inventoryPage.addToCartProduct("Add to cart");
         inventoryPage.goToCart("Cart Button");
         Assert.assertEquals(driver.getCurrentUrl(), "https://www.saucedemo.com/cart.html");
-        //Needs one more assert to verify the product is in the cart page
+
     }
 }
