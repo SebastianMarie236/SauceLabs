@@ -19,10 +19,10 @@ public class BaseTest {
         driver.get("https://www.saucedemo.com/");
    }
 
-        @After
-        public void quitBrowser() {
-            driver.quit();
-        }
+//        @After
+//        public void quitBrowser() {
+//            driver.quit();
+//        }
 
     }
 

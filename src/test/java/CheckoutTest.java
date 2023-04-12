@@ -10,7 +10,7 @@ public class CheckoutTest extends BaseTest {
         loginPage.login("standard_user", "secret_sauce");
         InventoryPage inventoryPage = new InventoryPage(driver);
         inventoryPage.addToCartProduct("Add to cart");
-        inventoryPage.goToCart("Cart Button");
+        inventoryPage.goToCart();
         CheckoutPage checkoutPage = new CheckoutPage(driver);
         checkoutPage.goToCheckout();
         Assert.assertEquals(driver.getCurrentUrl(), "https://www.saucedemo.com/checkout-step-one.html");

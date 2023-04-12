@@ -16,9 +16,9 @@ public class InventoryPage {
         this.driver = driver;
     }
 
-    private final By productName = By.id("item_4_title_link");
+    private final By productName = By.id("item_4_title_link"); //#
 
-    private final By addToCartBtn = By.id("add-to-cart-sauce-labs-backpack");
+    private final By addToCartBtn = By.id("add-to-cart-sauce-labs-backpack"); //#
 
     private final By cartBtn = By.className("shopping_cart_badge");
 
@@ -33,7 +33,7 @@ public class InventoryPage {
         driver.findElement(addToCartBtn).click();
     }
 
-    public void goToCart(String cartbtn) {
+    public void goToCart() {
         wait.until(ExpectedConditions.visibilityOfElementLocated(cartBtn));
         driver.findElement(cartBtn).click();
     }

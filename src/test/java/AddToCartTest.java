@@ -12,7 +12,7 @@ public class AddToCartTest extends BaseTest {
         loginPage.login("standard_user", "secret_sauce");
         InventoryPage inventoryPage = new InventoryPage(driver);
         inventoryPage.addToCartProduct("Add to cart");
-        inventoryPage.goToCart("Cart Button");
+        inventoryPage.goToCart();
         Assert.assertEquals(driver.getCurrentUrl(), "https://www.saucedemo.com/cart.html");
 
     }
