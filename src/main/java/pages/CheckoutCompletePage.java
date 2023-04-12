@@ -18,7 +18,8 @@ public class CheckoutCompletePage {
     }
 
     private final By backToProductsBtn = By.id("back-to-products");
-    public void goBackToProducts(){
+
+    public void goBackToProducts() {
 
         wait.until(ExpectedConditions.visibilityOfElementLocated(backToProductsBtn));
         driver.findElement(backToProductsBtn).click();
