@@ -7,22 +7,20 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
-public class CheckoutCompletePage {
+public class CheckoutOverviewStep2Page {
 
     WebDriver driver;
     WebDriverWait wait;
 
-    public CheckoutCompletePage(WebDriver driver) {
+    public CheckoutOverviewStep2Page(WebDriver driver) {
         wait = new WebDriverWait(driver, Duration.ofSeconds(15));
         this.driver = driver;
     }
+    private final By finishBtn = By.id("finish");
 
-    private final By backToProductsBtn = By.id("back-to-products");
-    public void goBackToProducts(){
-
-        wait.until(ExpectedConditions.visibilityOfElementLocated(backToProductsBtn));
-        driver.findElement(backToProductsBtn).click();
-
+    public void finishCheckout() {
+        wait.until(ExpectedConditions.visibilityOfElementLocated(finishBtn));
+        driver.findElement(finishBtn).click();
     }
 
 }
